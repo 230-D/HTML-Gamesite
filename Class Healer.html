@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Class Healer </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+<p id="healer"></p>
+<p id="healer2"></p>	
+	<br>
+	Class: Healer;<br>
+	Health-Points: 100;<br>
+	Mana-Points: 100;<br>
+	Shild: 50;<br>
+	Magic-Damage: 10;<br>
+	Magic-Resistence: 10;<br>
+	Strength-Damage: 3;<br>
+	Strength-Resistance: 5;<br>
+	Skill: Heilen (100% Heilung);<br>
+
+<h4>Die verfluchte Klasse Heiler<h4>
+
+Heiler haben eine begabte Fähigkeit die sich "Heilen" nennt, aber aus der begabten Fähigkeit
+erntet man auch eine große Verantwortung. Werden meist als <br>
+
+Heiler werden meist in Kriegen oder in Krankenstationen gebraucht.
+
+
+
+
+
+
+<script>
+
+var healer= {
+	
+	type: "Healer",
+	hp: 100, /*Health-Points*/
+	mp: 100, /*Mana-Points*/
+	shild: 50,
+	mada: 10, /* Magic-Damage*/
+	mare: 10, /*Magic-Resistence*/
+	strda: 3, /*Strength-Damage*/
+	stre: 5, /*Strength-Resistance*/
+	skill: "Heilen" /*100% Heilung*/
+		
+		};
+
+document.getElementById("healer").innerHTML= healer.type;
+document.getElementById("healer2").innerHTML= healer.skill;
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>

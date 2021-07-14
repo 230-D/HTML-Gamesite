@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> my first web page </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<style type ="text/css">
+		Body {
+			color: red;
+			}
+	</style>
+	
+	<script>
+		function myfunction() {
+			var x = dokument.getElementById("fname");
+			x.value = x.value.toUppercase();
+			}
+	</script>
+	</head>
+
+<body>
+<p> This is a Sample HTML Dokument.</p>
+This Javascript function will capitalize my name:
+<p>Enter your Name: <input type="text" id="fname" onchange="myfunction()"></p>
+
+This is a Line 1. <br> This is a Line 2.
+
+<p id="demo"></p>
+
+<script>
+
+document.getElementById("demo").innerHTML=Math.floor(Math.random()*10);
+
+</script>
+
+</body>
+
+
+
+
+</html>

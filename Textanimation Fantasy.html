@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Textanimation Fantasy </title>
+	
+</head>
+
+<body>
+
+<p onclick="typeWriter()">Click on Me!</p>
+<p id="demo" ></p>
+
+
+<script type="text/javascript">
+
+
+var i = 0;
+var txt = 'In einer Dark-Fantsay-Welt, in dem alle Helden durch eine Krankheit den Sie "CoreVirus" nannten verflucht wurden. 
+Gab es viele Menschen die sich zur Aufgabe gemacht haben, dass Virus mitsamt Helden auszulöschen.
+
+Da kommst du ins Spiel! Finde heraus was das CoreVirus ist und weshalb sich die Gesellschaft, innerhalb weniger Monate entschieden hat die Helden zu töten?
+
+Du wachst in deinem Bett auf, halb vernebelt und fragst dich warum du solche Kopfschmerzen hast. 
+Du stehst auf und guckst in den Spiegel, du trägst einen Schlafanzug.
+
+/*
+
+Spieler Interaktion:
+
+Nehme/n >
+Durchsuche/n >
+Suche/n >
+Anziehen >
+Lege/n >
+Schlafen >
+Fragen >
+Gehe/n >
+
+
+Körper:
+
+rechter Arm > 5 Finger 
+linker Arm > 5 Finger
+rechtes Bein > 5 Zehe
+linkes Bein > 5 Zehe
+Kopf 
+
+
+
+
+Schlafzimmer-Ausrüstung:
+Smartphone, Bett, Kleiderschrank, Schränke, Laptop
+
+Hausflur-Ausrüstung:
+Kommoden, Blumen, Schuhe
+
+Wohnzimmer-Ausrüstung:
+TV, Tisch, Schränke/Kommoden, Sofa, Karte
+
+Küche-Ausrüstung:
+Besteck, Teller, Schüssel, Kaffeemaschine, Mikrowelle, Backoffen, Herd, Schränke, Kühlschrank,
+Zutaten
+
+*/
+
+
+
+Verlassen deiner Wohnung. Du wohnst in der fünften Etage. Treppe oder Aufzug. Nachbar?
+Verlassen des Hauses.
+Du hörst von weitem Gegröle // Spieler Interaktion
+
+/* 
+
+Dem Gegröle hinterher. 
+
+Du gehst nicht dem Gegröle hinterher. 
+
+*/
+
+
+';
+
+
+
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+
+</script>
+	
+</body>
+
+</html>

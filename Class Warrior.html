@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Class Warrior </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+<p id="warrior"></p>
+<p id="warrior2"></p>
+
+	Class: Warrior; <br>
+	Health-Points: 100; <br>
+	Mana-Points: 100;<br>
+	Shild: 10;<br>
+	Magic-Damage: 3;<br>
+	Magic-Resistence: 4;<br>
+	Strength-Damage: 10;<br>
+	Strength-Resistance: 5;<br>
+	Skill: Doppelter Schaden (2x Team-Schaden Magic+Strength);
+
+<h4>Die verfluchte Klasse Warrior<h4>
+
+Warrior haben eine begabte Fähigkeit die sich "Doppelter Schaden" nennt, aber aus der begabten Fähigkeit
+erntet man auch eine große Verantwortung. Sie besitzen ein großes Schadenspotenzial.<br>
+
+Warrior schrecken vor keiner Herausforderung und werden meist in Kriegen an der Front eingesetzt.
+
+
+
+
+<script>
+
+var warrior= {
+	
+	type: "Warrior",
+	hp: 100, /*Health-Points*/
+	mp: 100, /*Mana-Points*/
+	shild: 10,
+	mada: 3, /* Magic-Damage*/
+	mare: 4, /*Magic-Resistence*/
+	strda: 10, /*Strength-Damage*/
+	stre: 5, /*Strength-Resistance*/
+	skill: "Doppelter Schaden" /*(2x Team-Schaden Magic+Strength)*/
+		
+		};
+
+document.getElementById("warrior").innerHTML=warrior.type;
+document.getElementById("warrior2").innerHTML=warrior.skill;
+
+</script>
+
+
+
+
+</body>
+
+
+
+</htm

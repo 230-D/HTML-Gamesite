@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Class Tank </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+<p id="tank-classes"></p>
+<p id="demo-object"></p>
+
+<script>
+
+var tank = {
+				classes:"Tank",	
+				health-points: 100,	
+				mana-points: 50, 
+				shild: 50,	
+				magic-damage: 2, 
+				strength-damage: 5, 
+				strength-resistance: 10, 
+				magic-resistence: 3, 
+				skill: "beschützen" /*50% weniger Team-Schaden erleiden)*/};
+
+document.getElementById("tank-classes").innerHTML=tank.classes;
+
+
+var car= {type:"Acura", model:"Integra", color:"white"};
+document.getElementById("demo-object").innerHTML= car.model;
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>

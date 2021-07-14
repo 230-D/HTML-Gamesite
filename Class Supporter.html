@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Class Supporter </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+<p id="supporter"></p>
+<p id="supporter2"></p>
+	<br>
+	Class: Support; <br>
+	Health-Points: 100;<br>
+	Mana-Points: 100;<br>
+	Shild: 30;<br>
+	Magic-Damage: 7;<br>
+	Magic-Resistence: 8;<br>
+	Strength-Damage: 6;<br>
+	Strength-Resistance: 7;<br>
+	Skill: Schilde hoch (+30 zusätzliche Schilde);
+
+<h4>Die verfluchte Klasse Supporter<h4>
+
+Supporter haben eine begabte Fähigkeit die sich "Schilde hoch" nennt, aber aus der begabten Fähigkeit
+erntet man auch eine große Verantwortung. Sie besitzen ein großes Wissen.<br>
+
+Supporter werden meist in Instituten oder in Kriegen gebraucht.
+
+
+
+
+<script>
+
+var supporter= {
+	
+	type: "Supporter",
+	hp: 100, /*Health-Points*/
+	mp: 100, /*Mana-Points*/
+	shild: 30,
+	mada: 7, /* Magic-Damage*/
+	strda: 8, /*Strength-Damage*/
+	stre: 6, /*Strength-Resistance*/
+	mare: 7, /*Magic-Resistence*/
+	skill: "Schild hoch" /*+30 zusätzliche Schilde*/
+		
+		};
+
+document.getElementById("supporter").innerHTML= supporter.type;
+document.getElementById("supporter2").innerHTML= supporter.skill;
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>

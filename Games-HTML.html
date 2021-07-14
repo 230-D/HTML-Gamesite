@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Character Selection</title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<style type ="text/css">
+		Body {
+			color: blue;
+			}
+	</style>
+	
+	
+	</head>
+
+<body>
+
+	This Javascript function will capitalize by DNT:
+	<p> This is a Sample HTML P&P-Games-Dokument.</p>
+	<p> Enter your Charactername: <input type="text" id="fname" onchange="myfunction()"></p>
+
+</body>
+
+<body>
+
+	Min 1; Max 10; 
+	Class: Tank; Healer; Warrior; Support
+	Shild: 10; 20; 30; 40; 50
+	Action: Werfen; Aufnehmen; Ablegen; Essen; Angreifen; Verteidigen;
+	Durchsuchen; Suchen; Untersuchen; Heilen; Schild geben; Beschützen;
+	Doppelter Schaden;
+	Dice/Würfel: 4; 6; 8; 10; 12; 20; 100
+	
+	Health-Points 100
+	Mana-Points 100
+	Magic-Damage
+	Strength-Damage
+	Shild
+	Strength-Resistance
+	Magic-Resistence
+	
+	
+	This is a Line 1. <br> This is a Line 2.
+
+</body>
+
+<body>
+	
+	Class: Tank;
+	Health-Points: 100;
+	Mana-Points: 50;
+	Shild: 50;
+	Magic-Damage: 2;
+	Strength-Damage: 5;
+	Strength-Resistance: 10;
+	Magic-Resistence: 3;
+	Skill: Beschützen (50% weniger Team-Schaden erleiden);
+	
+	Class: Healer;
+	Health-Points: 100;
+	Mana-Points: 100;
+	Shild: 50;
+	Magic-Damage: 10;
+	Magic-Resistence: 10;
+	Strength-Damage: 3;
+	Strength-Resistance: 5;
+	Skill: Heilen (100% Heilung);
+	
+	Class: Support;
+	Health-Points: 100;
+	Mana-Points: 100;
+	Shild: 30;
+	Magic-Damage: 7;
+	Magic-Resistence: 8;
+	Strength-Damage: 6;
+	Strength-Resistance: 7;
+	Skill: Schild geben (+30 zusätzliche Schilde);
+	
+	Class: Warrior;
+	Health-Points: 100;
+	Mana-Points: 100;
+	Shild: 10;
+	Magic-Damage: 3;
+	Magic-Resistence: 4;
+	Strength-Damage: 10;
+	Strength-Resistance: 5;
+	Skill: Doppelter Schaden (2x Team-Schaden Magic+Strength);
+	
+	
+<form name="characterselection" action="send.php" method="post">
+	<table border="1" bordercolor="green" width="50%" cellspacing="2" cellpadding="2">
+		<tr>
+			<td>Charactername:</td>
+			<td>
+				<input name="text" maxlength="20"/>
+			</td>
+		</tr>
+		<tr>
+			<td>Class:</td>
+			<td>
+				<select name="class"/>
+				<option> Tank </option>
+				<option> Healer </option>
+				<option> Supporter </option>
+				<option> Warrior </option>
+			
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Class:</td>
+			<td>
+				<input type="radio" name="class" value="ta">Tank
+				<input type="radio" name="class" value="he">Healer
+				<input type="radio" name="class" value="sup">Supporter
+				<input type="radio" name="class" value="wa">Warrior
+			
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Health-Points:</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Mana-Points:</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Shild:</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Magic-Damage:</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Magic-Resistence</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Strength-Damage</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Strength-Resistance</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Skill:</td>
+			<td> 
+				<select name="Skill"/>
+				<option> Beschützen </option>
+				<option> Heilen </option>
+				<option> Schild geben </option>
+				<option> Doppelter Schaden </option>
+			</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td>
+			
+			<input type="submit" name="submit" value="Submit"/>
+			<input type="reset" name="reset" value="Reset"/>
+			
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Dice/Würfel:</td>
+			<td id="demo"></td>
+		</tr>
+		
+	</table>
+</form>
+<script>
+	
+document.getElementById("demo").innerHTML= Math.floor(Math.random()*10);
+	
+</script>
+	
+</body>
+
+
+
+
+</html>

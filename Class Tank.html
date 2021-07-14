@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Class Tank </title>
+	<meta name="description" content="Page Description here" />
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+<p id="tank"></p>
+
+	Class: Tank;
+	Health-Points: 100;
+	Mana-Points: 50;
+	Shild: 50;
+	Magic-Damage: 2;
+	Strength-Damage: 5;
+	Strength-Resistance: 10;
+	Magic-Resistence: 3;
+	Skill: Beschützen (50% weniger Team-Schaden erleiden);
+
+
+<h4>Die verfluchte Klasse Tank<h4>
+
+Tank haben eine begabte Fähigkeit die sich "Beschützen" nennt, aber aus der begabten Fähigkeit
+erntet man auch eine große Verantwortung. Sie besitzen ein großes Resistenz- und Widerstandspontenzial.<br>
+
+Tank werden meist in Kriegen oder als Versuchsobjekt eingesetzt.
+
+
+
+
+
+
+<script>
+
+var tank= {
+	
+	type: "Tank",
+	hp: 100, /*Health-Points*/
+	mp: 50, /*Mana-Points*/
+	shild: 50,
+	mada: 2, /* Magic-Damage*/
+	strda: 5, /*Strength-Damage*/
+	stre: 10, /*Strength-Resistance*/
+	mare: 3, /*Magic-Resistence*/
+	skill: "Beschützen" /*50% weniger Team-Schaden erleiden)*/ 
+		
+		};
+
+document.getElementById("tank").innerHTML= tank.shild;
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
